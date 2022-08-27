@@ -214,10 +214,12 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
 }
 footer{
     margin: 2rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 footer > div{
@@ -242,57 +244,23 @@ footer *{
     padding: 10px 13px;
     border-radius: 50%;
 }
-/* .s3-card{
-    background-color: #FFF;
-    color: black;
-    margin: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.s3-cards{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-}
-.s3-card .card-title{
-    font-weight: 700;
-    font-size: 1.3rem;
-}
-.s3-card .card-subtitle{
-    color: gray;
-}
-.fa{
-    margin-right: 10px;
-    color: green;
-    font-size: 1.3rem;
-}
-.s3-card > div:first-child{
-    padding: 2rem;
-    border: 2px solid #000;
-}
-.card-points{
-    margin: 2rem 0px;
-}
-.card-point{
-    margin: 1rem 0px;
-}
-.price{
-    margin: 4rem 0px;
-}
-.price p:first-child{
-    font-weight: 700;
-    font-size: 1.3rem;
-}
-.price p:nth-child(2){
-    font-size: 0.9rem;
-    color: gray;
-    padding: 1rem 0px;
 
+
+@media screen and (max-width: 1080px){
+    .s1{
+        grid-template-columns: 1fr;
+    }
+    .s3-cards, .cards, .s4-cards, .section5{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    nav{
+        padding: 0px 1rem;
+    }
+    nav > ul{
+        display: none;
+    }
+    footer{
+        flex-direction: column;
+    }
 }
-.price button{
-    padding: 0.5rem 1rem;
-    background-color: #068BF0;
-    border: 0px;
-    border-radius: 0.5rem;
-} */
+
